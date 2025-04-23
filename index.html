@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ofelia Hănțoiu - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <ul>
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+    </button>
+</nav>
+
+<!-- Welcome Section -->
+<section id="welcome-section">
+    <h1>Ofelia Hănțoiu</h1>
+    <p>IT Student ✦ Aspiring Developer ✦ Creative Mind</p>
+</section>
+
+<!-- About -->
+<section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+        I'm Ofelia, a passionate IT student who loves turning creative ideas into clean, functional websites. I'm currently seeking an internship where I can contribute and grow with a great team.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" data-aos="fade-up" data-aos-delay="100">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+        <li>Basic React</li>
+    </ul>
+</section>
+
+<!-- Projects -->
+<section id="projects" data-aos="fade-up" data-aos-delay="200">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-tile">
+            <a href="/1st%20project/Survey%20form" target="_blank">
+                <img src="assets/survey.png" alt="Survey Form" />
+                <p>Survey Form</p>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="/2nd%20project/Tribute%20page" target="_blank">
+                <img src="assets/tribute.png" alt="Tribute Page" />
+                <p>Tribute Page</p>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="/3rd%20project/Technical%20Documentation%20Page" target="_blank">
+                <img src="assets/technical.png" alt="Technical Doc" />
+                <p>Technical Documentation Page</p>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="/4th%20project/Product%20Landing%20Page" target="_blank">
+                <img src="assets/product.png" alt="Product Page" />
+                <p>Product Landing Page</p>
+            </a>
+        </div>
+    </div>
+    <a class="button" href="https://github.com/yourgithubusername" target="_blank" id="profile-link">See My GitHub</a>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Let's work together...</h2>
+    <div class="contact-links">
+        <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="mailto:ofeliahantoiu5@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+        <a href="tel:+1234567890" target="_blank"><i class="fas fa-phone"></i> Call</a>
+    </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 600, easing: 'ease-out', once: true });
+    const toggleTheme = () => {
+        const root = document.documentElement;
+        const icon = document.getElementById("theme-icon");
+        root.classList.toggle("dark-theme");
+        icon.textContent = root.classList.contains("dark-theme") ? "☀️" : "🌙";
+    };
+</script>
+
+</body>
+</html>
