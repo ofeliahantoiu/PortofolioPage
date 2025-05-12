@@ -88,6 +88,15 @@ body {
     color: var(--bg);
 }
 
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--accent);
+    display: none;
+}
+
 section {
     padding: 100px 20px;
     text-align: center;
@@ -172,6 +181,7 @@ section h2 {
     border-radius: 16px;
     padding: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-tile:hover {
@@ -218,11 +228,6 @@ section h2 {
     margin-bottom: 20px;
 }
 
-#contact p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
 .contact-links {
     display: flex;
     flex-wrap: wrap;
@@ -249,23 +254,106 @@ section h2 {
     transform: translateY(5px);
 }
 
+/* Mobile Enhancements */
 @media (max-width: 600px) {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        padding: 14px 20px;
     }
 
     #navbar ul {
         flex-direction: column;
         gap: 14px;
+        display: none;
+        width: 100%;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar a {
+        padding: 10px 0;
     }
 
     #welcome-section h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
-    section h2 {
-        font-size: 2rem;
+    #welcome-section p,
+    section h2,
+    #about p,
+    #skills li,
+    #projects .button,
+    .contact-links a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 60px 16px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+/* Responsive Mobile Fix: Keep theme toggle on right */
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+        order: 1;
+    }
+
+    #theme-toggle {
+        order: 2;
+        margin-left: auto;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        gap: 14px;
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+        order: 3;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar a {
+        padding: 10px 0;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.2rem;
+    }
+
+    #welcome-section p,
+    section h2,
+    #about p,
+    #skills li,
+    #projects .button,
+    .contact-links a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 60px 16px;
     }
 
     .project-grid {

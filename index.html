@@ -13,6 +13,9 @@
 
 <!-- Navbar -->
 <nav id="navbar">
+    <button id="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
     <ul>
         <li><a href="#welcome-section">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -43,13 +46,24 @@
 <section id="skills" data-aos="fade-up" data-aos-delay="100">
     <h2>Skills</h2>
     <ul>
+        <!-- Programming Languages -->
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>TypeScript</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>PHP</li>
+
+        <!-- Frameworks & Tools -->
+        <li>React</li>
+        <li>Unity</li>
+        <li>SCRUM</li>
         <li>Git & GitHub</li>
-        <li>Responsive Design</li>
-        <li>Basic React</li>
     </ul>
+
 </section>
 
 <!-- Projects -->
@@ -57,27 +71,51 @@
     <h2>Projects</h2>
     <div class="project-grid">
         <div class="project-tile">
-            <a href="/1st%20project/Survey%20form" target="_blank">
-                <img src="assets/survey.png" alt="Survey Form" />
-                <p>Survey Form</p>
+            <a href="/javascript/Roman%20Numeral%20Converter" target="_blank">
+                <img src="assets/roman.png" alt="Roman Numeral Converter" loading="lazy" />
+                <p>Roman Numeral Converter</p>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="/javascript/RPG%20Creature%20Search" target="_blank">
+                <img src="assets/rpg.png" alt="RPG Creature Search" loading="lazy" />
+                <p>RPG Creature Search</p>
             </a>
         </div>
         <div class="project-tile">
             <a href="/2nd%20project/Tribute%20page" target="_blank">
-                <img src="assets/tribute.png" alt="Tribute Page" />
+                <img src="assets/tribute.png" alt="Tribute Page" loading="lazy" />
                 <p>Tribute Page</p>
             </a>
         </div>
         <div class="project-tile">
+            <a href="/javascript/Cash Register" target="_blank">
+                <img src="assets/cash.png" alt="Cash Register" loading="lazy" />
+                <p>Cash Register</p>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="/javascript/Telephone%20Number%20Validator" target="_blank">
+                <img src="assets/tel.png" alt="Telephone Number Validator" loading="lazy" />
+                <p>Telephone Number Validator</p>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="/javascript/Palindrome%20checker" target="_blank">
+                <img src="assets/pal.png" alt="Palindrome checker" loading="lazy" />
+                <p>Palindrome checker</p>
+            </a>
+        </div>
+        <div class="project-tile">
             <a href="/3rd%20project/Technical%20Documentation%20Page" target="_blank">
-                <img src="assets/technical.png" alt="Technical Doc" />
+                <img src="assets/technical.png" alt="Technical Doc" loading="lazy" />
                 <p>Technical Documentation Page</p>
             </a>
         </div>
         <div class="project-tile">
-            <a href="/4th%20project/Product%20Landing%20Page" target="_blank">
-                <img src="assets/product.png" alt="Product Page" />
-                <p>Product Landing Page</p>
+            <a href="/1st%20project/Survey%20form" target="_blank">
+                <img src="assets/survey.png" alt="Survey Form" loading="lazy" />
+                <p>Survey Form</p>
             </a>
         </div>
     </div>
@@ -100,12 +138,31 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 600, easing: 'ease-out', once: true });
+
     const toggleTheme = () => {
         const root = document.documentElement;
         const icon = document.getElementById("theme-icon");
         root.classList.toggle("dark-theme");
-        icon.textContent = root.classList.contains("dark-theme") ? "☀️" : "🌙";
+        const isDark = root.classList.contains("dark-theme");
+        icon.textContent = isDark ? "☀️" : "🌙";
+        localStorage.setItem("theme", isDark ? "dark" : "light");
     };
+
+    // Apply saved theme on load
+    window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-theme");
+            document.getElementById("theme-icon").textContent = "☀️";
+        }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const navList = document.querySelector("#navbar ul");
+    menuToggle.addEventListener("click", () => {
+        navList.classList.toggle("show");
+    });
 </script>
 
 </body>
