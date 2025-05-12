@@ -305,3 +305,124 @@ section h2 {
         padding: 60px 16px;
     }
 }
+
+/* University Projects Section */
+.university-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.university-project-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.university-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.university-project-card h3 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    color: var(--text);
+}
+
+.project-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.project-tech, .project-achievements {
+    margin-top: 15px;
+}
+
+.project-tech span, .project-achievements span {
+    font-weight: 500;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.project-tech ul, .project-achievements ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.project-tech li, .project-achievements li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.project-tech li:before, .project-achievements li:before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .university-projects-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+/* Project Bubbles */
+.project-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-bubble {
+    background-color: var(--card-bg);
+    color: var(--text);
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+}
+
+.project-bubble:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent);
+    color: var(--bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .project-bubbles {
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .project-bubble {
+        min-width: 150px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

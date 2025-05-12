@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Projects - Ofelia Hănțoiu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <button id="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <ul>
+        <li><a href="index.html#welcome-section">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+    </button>
+</nav>
+
+<!-- Projects Header -->
+<section id="projects-header">
+    <h1>University Projects</h1>
+    <p>Explore my academic work and achievements</p>
+</section>
+
+<!-- All University Projects -->
+<section id="projects" data-aos="fade-up">
+    <div class="university-projects-grid">
+        <div class="university-project-card">
+            <h3>Circle Solutions Website</h3>
+            <div class="project-details">
+                <p class="project-description">A modern, responsive website for a consulting firm, showcasing my ability to transform Figma designs into functional web applications with seamless user experience.</p>
+                <div class="project-tech">
+                    <span>Technologies used:</span>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="project-achievements">
+                    <span>Key achievements:</span>
+                    <ul>
+                        <li>Fully responsive design with modern UI/UX</li>
+                        <li>Seamless integration of frontend and backend</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="university-project-card">
+            <h3>Database System</h3>
+            <div class="project-details">
+                <p class="project-description">A secure authentication system with advanced password protection and virtualized deployment, demonstrating expertise in both security and system architecture.</p>
+                <div class="project-tech">
+                    <span>Technologies used:</span>
+                    <ul>
+                        <li>phpMyAdmin</li>
+                        <li>PHP</li>
+                        <li>HTML/CSS</li>
+                        <li>Virtualization (Proxmox)</li>
+                    </ul>
+                </div>
+                <div class="project-achievements">
+                    <span>Key achievements:</span>
+                    <ul>
+                        <li>Advanced security with password hashing</li>
+                        <li>Robust database integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="university-project-card">
+            <h3>Maze-Solving Robot</h3>
+            <div class="project-details">
+                <p class="project-description">An autonomous robot that navigates complex mazes using sensor technology and custom algorithms, showcasing practical application of embedded systems and robotics.</p>
+                <div class="project-tech">
+                    <span>Technologies used:</span>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>C/C++</li>
+                        <li>Hardware sensors (IR, ultrasonic)</li>
+                    </ul>
+                </div>
+                <div class="project-achievements">
+                    <span>Key achievements:</span>
+                    <ul>
+                        <li>Real-time autonomous navigation</li>
+                        <li>Custom sensor integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="university-project-card">
+            <h3>Facial Recognition Smart Lock</h3>
+            <div class="project-details">
+                <p class="project-description">A cutting-edge security system using facial recognition technology, combining computer vision with hardware integration for real-time access control.</p>
+                <div class="project-tech">
+                    <span>Technologies used:</span>
+                    <ul>
+                        <li>Python</li>
+                        <li>OpenCV</li>
+                        <li>Raspberry Pi</li>
+                    </ul>
+                </div>
+                <div class="project-achievements">
+                    <span>Key achievements:</span>
+                    <ul>
+                        <li>High-accuracy facial recognition</li>
+                        <li>Complete security system prototype</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="university-project-card">
+            <h3>AR Factory Simulation</h3>
+            <div class="project-details">
+                <p class="project-description">An innovative AR application that brings industrial processes to life, transitioning from Apple Vision Pro to web-based AR for maximum accessibility.</p>
+                <div class="project-tech">
+                    <span>Technologies used:</span>
+                    <ul>
+                        <li>JavaScript / WebAR</li>
+                        <li>visionOS</li>
+                        <li>Full-stack tools</li>
+                    </ul>
+                </div>
+                <div class="project-achievements">
+                    <span>Key achievements:</span>
+                    <ul>
+                        <li>Cross-platform AR solution</li>
+                        <li>Interactive 3D visualizations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="university-project-card">
+            <h3>AI Question Generator</h3>
+            <div class="project-details">
+                <p class="project-description">An AI-powered tool for QVOX that revolutionizes compliance auditing through automated question generation and intelligent classification.</p>
+                <div class="project-tech">
+                    <span>Technologies used:</span>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>AI/NLP</li>
+                        <li>System integration</li>
+                    </ul>
+                </div>
+                <div class="project-achievements">
+                    <span>Key achievements:</span>
+                    <ul>
+                        <li>Real-world AI implementation</li>
+                        <li>Streamlined compliance workflow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="button" href="index.html#university-projects">Back to Home</a>
+</section>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 600, easing: 'ease-out', once: true });
+
+    const toggleTheme = () => {
+        const root = document.documentElement;
+        const icon = document.getElementById("theme-icon");
+        root.classList.toggle("dark-theme");
+        const isDark = root.classList.contains("dark-theme");
+        icon.textContent = isDark ? "☀️" : "🌙";
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    };
+
+    // Apply saved theme on load
+    window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-theme");
+            document.getElementById("theme-icon").textContent = "☀️";
+        }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const navList = document.querySelector("#navbar ul");
+    menuToggle.addEventListener("click", () => {
+        navList.classList.toggle("show");
+    });
+</script>
+
+</body>
+</html> 
