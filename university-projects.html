@@ -6,7 +6,7 @@
     <title>University Projects - Ofelia Hănțoiu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
@@ -23,181 +23,233 @@
         <li><a href="index.html#projects">Projects</a></li>
         <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle" onclick="toggleTheme()">
-        <span id="theme-icon">🌙</span>
-    </button>
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="ball"></span>
+        </label>
+    </div>
 </nav>
 
 <!-- Projects Header -->
 <section id="projects-header">
-    <h1>University Projects</h1>
-    <p>Explore my academic work and achievements</p>
+    <div class="section-container">
+        <h1>University Projects</h1>
+        <p>Explore my academic work and achievements</p>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="hardware">Hardware</button>
+            <button class="filter-btn" data-filter="ar">AR/VR</button>
+        </div>
+    </div>
 </section>
 
 <!-- All University Projects -->
 <section id="projects" data-aos="fade-up">
-    <div class="university-projects-grid">
-        <div class="university-project-card">
-            <h3>Circle Solutions Website</h3>
-            <div class="project-details">
-                <p class="project-description">A modern, responsive website for a consulting firm, showcasing my ability to transform Figma designs into functional web applications with seamless user experience.</p>
-                <div class="project-tech">
-                    <span>Technologies used:</span>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>Figma</li>
-                    </ul>
+    <div class="section-container">
+        <div class="university-projects-grid">
+            <div class="university-project-card" data-category="web" data-aos="fade-up">
+                <div class="project-icon">
+                    <i class="fas fa-globe"></i>
                 </div>
-                <div class="project-achievements">
-                    <span>Key achievements:</span>
-                    <ul>
-                        <li>Fully responsive design with modern UI/UX</li>
-                        <li>Seamless integration of frontend and backend</li>
-                    </ul>
+                <div class="project-content">
+                    <h3>Circle Solutions Website</h3>
+                    <p>A modern, responsive website for a consulting firm, showcasing my ability to transform Figma designs into functional web applications.</p>
+                    <div class="project-tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                    <div class="project-achievements">
+                        <button class="toggle-achievements">View Achievements <i class="fas fa-chevron-down"></i></button>
+                        <div class="achievements-content">
+                            <ul>
+                                <li>Fully responsive design with modern UI/UX</li>
+                                <li>Seamless integration of frontend and backend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Database System</h3>
+                    <p>A secure authentication system with advanced password protection and virtualized deployment.</p>
+                    <div class="project-tech-stack">
+                        <span>phpMyAdmin</span>
+                        <span>PHP</span>
+                        <span>Proxmox</span>
+                    </div>
+                    <div class="project-achievements">
+                        <button class="toggle-achievements">View Achievements <i class="fas fa-chevron-down"></i></button>
+                        <div class="achievements-content">
+                            <ul>
+                                <li>Advanced security with password hashing</li>
+                                <li>Robust database integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-project-card" data-category="hardware" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Maze-Solving Robot</h3>
+                    <p>An autonomous robot that navigates complex mazes using sensor technology and custom algorithms.</p>
+                    <div class="project-tech-stack">
+                        <span>Arduino</span>
+                        <span>C/C++</span>
+                        <span>Hardware</span>
+                    </div>
+                    <div class="project-achievements">
+                        <button class="toggle-achievements">View Achievements <i class="fas fa-chevron-down"></i></button>
+                        <div class="achievements-content">
+                            <ul>
+                                <li>Real-time autonomous navigation</li>
+                                <li>Custom sensor integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-project-card" data-category="ai" data-aos="fade-up">
+                <div class="project-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Facial Recognition Smart Lock</h3>
+                    <p>A cutting-edge security system using facial recognition technology for real-time access control.</p>
+                    <div class="project-tech-stack">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Raspberry Pi</span>
+                    </div>
+                    <div class="project-achievements">
+                        <button class="toggle-achievements">View Achievements <i class="fas fa-chevron-down"></i></button>
+                        <div class="achievements-content">
+                            <ul>
+                                <li>High-accuracy facial recognition</li>
+                                <li>Complete security system prototype</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-project-card" data-category="ar" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-icon">
+                    <i class="fas fa-vr-cardboard"></i>
+                </div>
+                <div class="project-content">
+                    <h3>AR Factory Simulation</h3>
+                    <p>An innovative AR application that brings industrial processes to life through web-based AR.</p>
+                    <div class="project-tech-stack">
+                        <span>WebAR</span>
+                        <span>visionOS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-achievements">
+                        <button class="toggle-achievements">View Achievements <i class="fas fa-chevron-down"></i></button>
+                        <div class="achievements-content">
+                            <ul>
+                                <li>Cross-platform AR solution</li>
+                                <li>Interactive 3D visualizations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-project-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="project-content">
+                    <h3>AI Question Generator</h3>
+                    <p>An AI-powered tool for QVOX that revolutionizes compliance auditing through automated question generation.</p>
+                    <div class="project-tech-stack">
+                        <span>Machine Learning</span>
+                        <span>AI/NLP</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="project-achievements">
+                        <button class="toggle-achievements">View Achievements <i class="fas fa-chevron-down"></i></button>
+                        <div class="achievements-content">
+                            <ul>
+                                <li>Real-world AI implementation</li>
+                                <li>Streamlined compliance workflow</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="university-project-card">
-            <h3>Database System</h3>
-            <div class="project-details">
-                <p class="project-description">A secure authentication system with advanced password protection and virtualized deployment, demonstrating expertise in both security and system architecture.</p>
-                <div class="project-tech">
-                    <span>Technologies used:</span>
-                    <ul>
-                        <li>phpMyAdmin</li>
-                        <li>PHP</li>
-                        <li>HTML/CSS</li>
-                        <li>Virtualization (Proxmox)</li>
-                    </ul>
-                </div>
-                <div class="project-achievements">
-                    <span>Key achievements:</span>
-                    <ul>
-                        <li>Advanced security with password hashing</li>
-                        <li>Robust database integration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="university-project-card">
-            <h3>Maze-Solving Robot</h3>
-            <div class="project-details">
-                <p class="project-description">An autonomous robot that navigates complex mazes using sensor technology and custom algorithms, showcasing practical application of embedded systems and robotics.</p>
-                <div class="project-tech">
-                    <span>Technologies used:</span>
-                    <ul>
-                        <li>Arduino</li>
-                        <li>C/C++</li>
-                        <li>Hardware sensors (IR, ultrasonic)</li>
-                    </ul>
-                </div>
-                <div class="project-achievements">
-                    <span>Key achievements:</span>
-                    <ul>
-                        <li>Real-time autonomous navigation</li>
-                        <li>Custom sensor integration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="university-project-card">
-            <h3>Facial Recognition Smart Lock</h3>
-            <div class="project-details">
-                <p class="project-description">A cutting-edge security system using facial recognition technology, combining computer vision with hardware integration for real-time access control.</p>
-                <div class="project-tech">
-                    <span>Technologies used:</span>
-                    <ul>
-                        <li>Python</li>
-                        <li>OpenCV</li>
-                        <li>Raspberry Pi</li>
-                    </ul>
-                </div>
-                <div class="project-achievements">
-                    <span>Key achievements:</span>
-                    <ul>
-                        <li>High-accuracy facial recognition</li>
-                        <li>Complete security system prototype</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="university-project-card">
-            <h3>AR Factory Simulation</h3>
-            <div class="project-details">
-                <p class="project-description">An innovative AR application that brings industrial processes to life, transitioning from Apple Vision Pro to web-based AR for maximum accessibility.</p>
-                <div class="project-tech">
-                    <span>Technologies used:</span>
-                    <ul>
-                        <li>JavaScript / WebAR</li>
-                        <li>visionOS</li>
-                        <li>Full-stack tools</li>
-                    </ul>
-                </div>
-                <div class="project-achievements">
-                    <span>Key achievements:</span>
-                    <ul>
-                        <li>Cross-platform AR solution</li>
-                        <li>Interactive 3D visualizations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="university-project-card">
-            <h3>AI Question Generator</h3>
-            <div class="project-details">
-                <p class="project-description">An AI-powered tool for QVOX that revolutionizes compliance auditing through automated question generation and intelligent classification.</p>
-                <div class="project-tech">
-                    <span>Technologies used:</span>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>AI/NLP</li>
-                        <li>System integration</li>
-                    </ul>
-                </div>
-                <div class="project-achievements">
-                    <span>Key achievements:</span>
-                    <ul>
-                        <li>Real-world AI implementation</li>
-                        <li>Streamlined compliance workflow</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <a class="button" href="index.html#university-projects">Back to Home</a>
     </div>
-    <a class="button" href="index.html#university-projects">Back to Home</a>
 </section>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 <script>
+    // Initialize AOS
     AOS.init({ duration: 600, easing: 'ease-out', once: true });
 
-    const toggleTheme = () => {
-        const root = document.documentElement;
-        const icon = document.getElementById("theme-icon");
-        root.classList.toggle("dark-theme");
-        const isDark = root.classList.contains("dark-theme");
-        icon.textContent = isDark ? "☀️" : "🌙";
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-    };
+    // Project filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.university-project-card');
 
-    // Apply saved theme on load
-    window.addEventListener("DOMContentLoaded", () => {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme === "dark") {
-            document.documentElement.classList.add("dark-theme");
-            document.getElementById("theme-icon").textContent = "☀️";
-        }
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+            
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'flex';
+                    setTimeout(() => card.style.opacity = '1', 50);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.display = 'none', 300);
+                }
+            });
+        });
     });
 
-    // Mobile menu toggle
-    const menuToggle = document.getElementById("menu-toggle");
-    const navList = document.querySelector("#navbar ul");
-    menuToggle.addEventListener("click", () => {
-        navList.classList.toggle("show");
+    // Toggle achievements
+    const toggleButtons = document.querySelectorAll('.toggle-achievements');
+    
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+                button.classList.remove('active');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+                button.classList.add('active');
+            }
+        });
     });
 </script>
 

@@ -51,4 +51,71 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             navList.classList.remove('show');
         }
     });
+});
+
+// University Projects Expand/Collapse
+document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.university-project-card');
+    
+    projectCards.forEach(card => {
+        const header = card.querySelector('.project-header');
+        const expandBtn = card.querySelector('.expand-btn');
+        const content = card.querySelector('.project-content');
+        
+        // Function to toggle content
+        const toggleContent = () => {
+            const isExpanded = content.classList.contains('expanded');
+            
+            // Close all other cards first
+            projectCards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    const otherContent = otherCard.querySelector('.project-content');
+                    const otherBtn = otherCard.querySelector('.expand-btn');
+                    const otherIcon = otherBtn.querySelector('i');
+                    
+                    otherContent.classList.remove('expanded');
+                    otherContent.style.maxHeight = '0';
+                    otherBtn.classList.remove('active');
+                    otherIcon.style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Update button state
+            expandBtn.classList.toggle('active');
+            
+            // Update content state with smooth transition
+            if (!isExpanded) {
+                content.style.maxHeight = '0';
+                content.classList.add('expanded');
+                // Force reflow
+                content.offsetHeight;
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                // Force reflow
+                content.offsetHeight;
+                content.style.maxHeight = '0';
+                setTimeout(() => {
+                    content.classList.remove('expanded');
+                }, 400); // Match transition duration
+            }
+            
+            // Update button icon with smooth rotation
+            const icon = expandBtn.querySelector('i');
+            icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+        };
+        
+        // Add click handlers
+        header.addEventListener('click', (e) => {
+            // Don't trigger if clicking the expand button (it has its own handler)
+            if (!e.target.closest('.expand-btn')) {
+                toggleContent();
+            }
+        });
+        
+        expandBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent header click from firing
+            toggleContent();
+        });
+    });
 }); 
