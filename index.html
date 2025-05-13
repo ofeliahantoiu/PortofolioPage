@@ -6,7 +6,7 @@
     <title>Ofelia Hănțoiu - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
@@ -23,47 +23,120 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle" onclick="toggleTheme()">
-        <span id="theme-icon">🌙</span>
-    </button>
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="ball"></span>
+        </label>
+    </div>
 </nav>
 
 <!-- Welcome Section -->
 <section id="welcome-section">
-    <h1>Ofelia Hănțoiu</h1>
-    <p>IT Student ✦ Aspiring Developer ✦ Creative Mind</p>
+    <div class="welcome-decoration">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="welcome-content">
+        <h1>Ofelia Hănțoiu</h1>
+        <p>IT Student ✦ Aspiring Developer ✦ Creative Mind</p>
+        <div class="welcome-tech-stack">
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-js" title="JavaScript"></i>
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fab fa-java" title="Java"></i>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
 </section>
 
 <!-- About -->
 <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-        I'm Ofelia, a passionate IT student who loves turning creative ideas into clean, functional websites. I'm currently seeking an internship where I can contribute and grow with a great team.
-    </p>
+    <div class="section-container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="assets/cover-foto.jpg" alt="Ofelia Hănțoiu" />
+            </div>
+            <p class="about-intro">
+                I'm Ofelia, a developer who sees code as a canvas for human connection. 
+                My passion for classical literature, modern art, scientific discoveries, and strategic games has taught me that the most elegant solutions often lie at the intersection of different worlds. 
+                This rich tapestry of perspectives allows me to craft technology that resonates with both logic and humanity.
+            </p>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Natural Leader</h3>
+                    <p>I inspire and guide teams to success through empathy and decisive action.</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-comments"></i>
+                    <h3>Effective Communicator</h3>
+                    <p>I transform complex technical concepts into clear, engaging messages for any audience.</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Creative Innovator</h3>
+                    <p>I blend technical expertise with creative thinking to develop unique solutions.</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-atom"></i>
+                    <h3>Science Enthusiast</h3>
+                    <p>My passion for physics and astronomy brings a unique perspective to problem-solving.</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-chess"></i>
+                    <h3>Strategic Thinker</h3>
+                    <p>I approach challenges with the same analytical mindset I use in chess and puzzles.</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Team Player</h3>
+                    <p>I bring positive energy and support to every team I collaborate with.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Skills -->
 <section id="skills" data-aos="fade-up" data-aos-delay="100">
-    <h2>Skills</h2>
-    <ul>
-        <!-- Programming Languages -->
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>TypeScript</li>
-        <li>C++</li>
-        <li>C#</li>
-        <li>PHP</li>
+    <div class="section-container">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-react"></i> TypeScript</li>
+            <li><i class="fas fa-code"></i> C++</li>
+            <li><i class="fas fa-code"></i> C#</li>
+            <li><i class="fab fa-php"></i> PHP</li>
+            <li><i class="fab fa-swift"></i> Swift</li>
 
-        <!-- Frameworks & Tools -->
-        <li>React</li>
-        <li>Unity</li>
-        <li>SCRUM</li>
-        <li>Git & GitHub</li>
-    </ul>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
 
+            <li><i class="fas fa-gamepad"></i> Unity</li>
+            <li><i class="fas fa-tasks"></i> SCRUM</li>
+            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fas fa-server"></i> RESTful APIs</li>
+            <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+        </ul>
+    </div>
 </section>
 
 <!-- University Projects -->
@@ -81,72 +154,58 @@
 
 <!-- Projects -->
 <section id="projects" data-aos="fade-up" data-aos-delay="200">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        <div class="project-tile">
-            <a href="/javascript/Roman%20Numeral%20Converter" target="_blank">
-                <img src="assets/roman.png" alt="Roman Numeral Converter" loading="lazy" />
-                <p>Roman Numeral Converter</p>
-            </a>
+    <div class="section-container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-tile" data-aos="fade-up">
+                <a href="/javascript/Roman%20Numeral%20Converter" target="_blank">
+                    <img src="assets/roman.png" alt="Roman Numeral Converter" loading="lazy" />
+                    <div class="project-overlay">
+                        <p>Roman Numeral Converter</p>
+                        <span class="project-tech">HTML • CSS • JavaScript</span>
+                    </div>
+                </a>
+            </div>
+            <div class="project-tile" data-aos="fade-up" data-aos-delay="100">
+                <a href="/javascript/RPG%20Creature%20Search" target="_blank">
+                    <img src="assets/rpg.png" alt="RPG Creature Search" loading="lazy" />
+                    <div class="project-overlay">
+                        <p>RPG Creature Search</p>
+                        <span class="project-tech">React • API Integration</span>
+                    </div>
+                </a>
+            </div>
+            <div class="project-tile" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://ofeliahantoiu.github.io/ResponsiveWebDesign/pages/tribute/index.html" target="_blank">
+                    <img src="assets/tribute.png" alt="Tribute Page" loading="lazy" />
+                    <div class="project-overlay">
+                        <p>Tribute Page</p>
+                        <span class="project-tech">HTML • CSS • Responsive Design</span>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="project-tile">
-            <a href="/javascript/RPG%20Creature%20Search" target="_blank">
-                <img src="assets/rpg.png" alt="RPG Creature Search" loading="lazy" />
-                <p>RPG Creature Search</p>
-            </a>
-        </div>
-        <div class="project-tile">
-            <a href="/2nd%20project/Tribute%20page" target="_blank">
-                <img src="assets/tribute.png" alt="Tribute Page" loading="lazy" />
-                <p>Tribute Page</p>
-            </a>
-        </div>
+        <a class="button" href="projects.html">See More Projects</a>
     </div>
-    <a class="button" href="projects.html">See More Projects</a>
 </section>
 
 <!-- Contact -->
 <section id="contact">
-    <h2>Let's work together...</h2>
-    <div class="contact-links">
-        <a href="assets/CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
-        <a href="https://github.com/ofeliahantoiu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/ofelia-valentina-h%C4%83n%C8%9Boiu-956021350/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="mailto:ofeliahantoiu5@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
-        <a href="tel:+31616774343" target="_blank"><i class="fas fa-phone"></i> Call</a>
+    <div class="section-container">
+        <h2>Let's work together...</h2>
+        <div class="contact-links">
+            <a href="assets/CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
+            <a href="https://github.com/ofeliahantoiu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/ofelia-valentina-h%C4%83n%C8%9Boiu-956021350/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:ofeliahantoiu5@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+            <a href="tel:+31616774343" target="_blank"><i class="fas fa-phone"></i> Call</a>
+        </div>
     </div>
 </section>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({ duration: 600, easing: 'ease-out', once: true });
-
-    const toggleTheme = () => {
-        const root = document.documentElement;
-        const icon = document.getElementById("theme-icon");
-        root.classList.toggle("dark-theme");
-        const isDark = root.classList.contains("dark-theme");
-        icon.textContent = isDark ? "☀️" : "🌙";
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-    };
-
-    // Apply saved theme on load
-    window.addEventListener("DOMContentLoaded", () => {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme === "dark") {
-            document.documentElement.classList.add("dark-theme");
-            document.getElementById("theme-icon").textContent = "☀️";
-        }
-    });
-
-    // Mobile menu toggle
-    const menuToggle = document.getElementById("menu-toggle");
-    const navList = document.querySelector("#navbar ul");
-    menuToggle.addEventListener("click", () => {
-        navList.classList.toggle("show");
-    });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
