@@ -1167,12 +1167,15 @@ section h2 {
 
 .current-flag {
     cursor: pointer;
-    width: 30px;
-    height: 20px;
-    border-radius: 4px;
+    width: 24px;
+    height: 16px;
+    border-radius: 2px;
     overflow: hidden;
     transition: transform 0.3s ease;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .current-flag:hover {
@@ -1183,6 +1186,7 @@ section h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .language-dropdown {
@@ -1217,11 +1221,12 @@ section h2 {
 }
 
 .language-option img {
-    width: 24px;
-    height: 16px;
+    width: 20px;
+    height: 14px;
     margin-right: 8px;
     border-radius: 2px;
     flex-shrink: 0;
+    display: block;
 }
 
 .language-option span {
