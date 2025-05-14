@@ -1,0 +1,84 @@
+{
+    "nav": {
+        "home": "Acasă",
+        "about": "Despre",
+        "skills": "Aptitudini",
+        "projects": "Proiecte",
+        "contact": "Contact"
+    },
+    "welcome": {
+        "title": "Ofelia Hănțoiu",
+        "subtitle": "Studentă IT ✦ Programator În Devenire ✦ Minte Creativă",
+        "scroll": "Derulează în jos"
+    },
+    "about": {
+        "title": "Despre Mine",
+        "intro": "Sunt Ofelia, un programator care vede codul ca pe un sprijin pentru conexiunea umană. Pasiunea mea pentru arta clasică și modernă, literatură, descoperiri științifice și jocuri strategice m-a învățat că cele mai elegante soluții se află adesea la intersecția diferitelor lumi. Această diversitate de perspective îmi oferă cadrul necesar pentru a crea tehnologie care atinge atât rigoarea logicii, cât și profunzimea umanității.",
+        "highlights": {
+            "leader": {
+                "title": "Lider Natural",
+                "description": "Inspir și ghidez echipele spre succes prin empatie și acțiune decisivă."
+            },
+            "communicator": {
+                "title": "Comunicativă",
+                "description": "Transform conceptele tehnice complexe în mesaje clare și captivante pentru orice public."
+            },
+            "innovator": {
+                "title": "Inovatoare",
+                "description": "Combin expertiza tehnică cu gândirea creativă pentru a dezvolta soluții unice."
+            },
+            "science": {
+                "title": "Știință",
+                "description": "Pasiunea mea pentru fizică și astronomie aduce o perspectivă unică asupra rezolvării problemelor."
+            },
+            "strategic": {
+                "title": "Strategie",
+                "description": "Abordez provocările cu aceeași mentalitate analitică pe care o folosesc în șah și puzzle-uri."
+            },
+            "team": {
+                "title": "Team Player",
+                "description": "Aduc energie pozitivă și sprijin fiecărei echipe cu care colaborez."
+            }
+        }
+    },
+    "skills": {
+        "title": "Aptitudini"
+    },
+    "projects": {
+        "title": "Proiecte",
+        "university": {
+            "title": "Proiecte Universitare",
+            "circle": {
+                "title": "Website Circle Solutions",
+                "description": "Un website modern și responsiv pentru o firmă de consultanță, demonstrând abilitatea mea de a transforma design-uri Figma în aplicații web funcționale."
+            },
+            "database": {
+                "title": "Sistem Bază de Date",
+                "description": "Un sistem de autentificare securizat cu protecție avansată a parolelor și implementare virtualizată."
+            },
+            "robot": {
+                "title": "Robot Autonom",
+                "description": "Un robot care navighează labirinturi complexe folosind tehnologie senzorială și algoritmi personalizați."
+            },
+            "lock": {
+                "title": "Smart Lock cu Recunoaștere Facială",
+                "description": "Un sistem de securitate de ultimă generație folosind tehnologia de recunoaștere facială pentru controlul accesului în timp real."
+            },
+            "ar": {
+                "title": "Simulare AR",
+                "description": "O aplicație AR inovatoare care aduce procesele industriale la viață prin AR bazat pe web."
+            },
+            "ai": {
+                "title": "Generator de Întrebări AI",
+                "description": "Un instrument bazat pe AI pentru QVOX care revoluționează auditarea conformității prin generarea automată de întrebări."
+            }
+        },
+        "buttons": {
+            "seeMore": "Vezi Mai Multe Proiecte",
+            "learnMore": "Află Mai Multe"
+        }
+    },
+    "contact": {
+        "title": "Haide Să Lucrăm Împreună..."
+    }
+} 

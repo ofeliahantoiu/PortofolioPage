@@ -1,0 +1,84 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "Over",
+        "skills": "Vaardigheden",
+        "projects": "Projecten",
+        "contact": "Contact"
+    },
+    "welcome": {
+        "title": "Ofelia Hănțoiu",
+        "subtitle": "IT Student ✦ Aspirerend Ontwikkelaar ✦ Creatieve Geest",
+        "scroll": "Scroll naar beneden"
+    },
+    "about": {
+        "title": "Over Mij",
+        "intro": "Ik ben Ofelia, een ontwikkelaar die code ziet als een canvas voor menselijke verbinding. Mijn passie voor klassieke en moderne kunst en literatuur, wetenschappelijke ontdekkingen en strategische spellen heeft me geleerd dat de meest elegante oplossingen vaak liggen op het snijvlak van verschillende werelden. Dit rijke tapijt van perspectieven stelt me in staat technologie te creëren die resoneert met zowel logica als menselijkheid.",
+        "highlights": {
+            "leader": {
+                "title": "Natuurlijk Leider",
+                "description": "Ik inspireer en begeleid teams naar succes door empathie en besluitvaardig handelen."
+            },
+            "communicator": {
+                "title": "Effectief Communicator",
+                "description": "Ik transformeer complexe technische concepten in duidelijke, boeiende berichten voor elk publiek."
+            },
+            "innovator": {
+                "title": "Creatief Innovator",
+                "description": "Ik combineer technische expertise met creatief denken om unieke oplossingen te ontwikkelen."
+            },
+            "science": {
+                "title": "Wetenschapsliefhebber",
+                "description": "Mijn passie voor natuurkunde en astronomie brengt een uniek perspectief op probleemoplossing."
+            },
+            "strategic": {
+                "title": "Strategisch Denker",
+                "description": "Ik benader uitdagingen met dezelfde analytische mindset die ik gebruik in schaken en puzzels."
+            },
+            "team": {
+                "title": "Teamspeler",
+                "description": "Ik breng positieve energie en ondersteuning naar elk team waarmee ik samenwerk."
+            }
+        }
+    },
+    "skills": {
+        "title": "Vaardigheden"
+    },
+    "projects": {
+        "title": "Projecten",
+        "university": {
+            "title": "Universitaire Projecten",
+            "circle": {
+                "title": "Circle Solutions Website",
+                "description": "Een moderne, responsieve website voor een adviesbureau, die mijn vermogen toont om Figma-ontwerpen om te zetten in functionele webapplicaties."
+            },
+            "database": {
+                "title": "Databasesysteem",
+                "description": "Een beveiligd authenticatiesysteem met geavanceerde wachtwoordbescherming en gevirtualiseerde implementatie."
+            },
+            "robot": {
+                "title": "Doolhof-Oplossende Robot",
+                "description": "Een autonome robot die complexe doolhoven navigeert met behulp van sensortechnologie en aangepaste algoritmen."
+            },
+            "lock": {
+                "title": "Gezichtsherkenning Smart Lock",
+                "description": "Een geavanceerd beveiligingssysteem dat gezichtsherkenningstechnologie gebruikt voor real-time toegangscontrole."
+            },
+            "ar": {
+                "title": "AR Fabriekssimulatie",
+                "description": "Een innovatieve AR-applicatie die industriële processen tot leven brengt via webgebaseerde AR."
+            },
+            "ai": {
+                "title": "AI Vraaggenerator",
+                "description": "Een AI-gestuurd hulpmiddel voor QVOX dat compliance-auditing revolutioneert door automatische vraaggeneratie."
+            }
+        },
+        "buttons": {
+            "seeMore": "Bekijk Meer Projecten",
+            "learnMore": "Meer Informatie"
+        }
+    },
+    "contact": {
+        "title": "Laten We Samenwerken..."
+    }
+} 

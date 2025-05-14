@@ -1,0 +1,84 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "welcome": {
+        "title": "Ofelia Hănțoiu",
+        "subtitle": "IT Student ✦ Aspiring Developer ✦ Creative Mind",
+        "scroll": "Scroll Down"
+    },
+    "about": {
+        "title": "About Me",
+        "intro": "I'm Ofelia, a developer who sees code as a canvas for human connection. My passion for classical and modern art and literature, scientific discoveries, and strategic games has taught me that the most elegant solutions often lie at the intersection of different worlds. This rich tapestry of perspectives allows me to craft technology that resonates with both logic and humanity.",
+        "highlights": {
+            "leader": {
+                "title": "Natural Leader",
+                "description": "I inspire and guide teams to success through empathy and decisive action."
+            },
+            "communicator": {
+                "title": "Effective Communicator",
+                "description": "I transform complex technical concepts into clear, engaging messages for any audience."
+            },
+            "innovator": {
+                "title": "Creative Innovator",
+                "description": "I blend technical expertise with creative thinking to develop unique solutions."
+            },
+            "science": {
+                "title": "Science Enthusiast",
+                "description": "My passion for physics and astronomy brings a unique perspective to problem-solving."
+            },
+            "strategic": {
+                "title": "Strategic Thinker",
+                "description": "I approach challenges with the same analytical mindset I use in chess and puzzles."
+            },
+            "team": {
+                "title": "Team Player",
+                "description": "I bring positive energy and support to every team I collaborate with."
+            }
+        }
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "projects": {
+        "title": "Projects",
+        "university": {
+            "title": "University Projects",
+            "circle": {
+                "title": "Circle Solutions Website",
+                "description": "A modern, responsive website for a consulting firm, showcasing my ability to transform Figma designs into functional web applications."
+            },
+            "database": {
+                "title": "Database System",
+                "description": "A secure authentication system with advanced password protection and virtualized deployment."
+            },
+            "robot": {
+                "title": "Maze-Solving Robot",
+                "description": "An autonomous robot that navigates complex mazes using sensor technology and custom algorithms."
+            },
+            "lock": {
+                "title": "Facial Recognition Smart Lock",
+                "description": "A cutting-edge security system using facial recognition technology for real-time access control."
+            },
+            "ar": {
+                "title": "AR Factory Simulation",
+                "description": "An innovative AR application that brings industrial processes to life through web-based AR."
+            },
+            "ai": {
+                "title": "AI Question Generator",
+                "description": "An AI-powered tool for QVOX that revolutionizes compliance auditing through automated question generation."
+            }
+        },
+        "buttons": {
+            "seeMore": "See More Projects",
+            "learnMore": "Learn More"
+        }
+    },
+    "contact": {
+        "title": "Let's Work Together..."
+    }
+} 
