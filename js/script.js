@@ -77,6 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     otherContent.style.maxHeight = '0';
                     otherBtn.classList.remove('active');
                     otherIcon.style.transform = 'rotate(0deg)';
+                    otherIcon.style.webkitTransform = 'rotate(0deg)';
+                    otherIcon.style.mozTransform = 'rotate(0deg)';
+                    otherIcon.style.oTransform = 'rotate(0deg)';
                 }
             });
             
@@ -88,12 +91,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.style.maxHeight = '0';
                 content.classList.add('expanded');
                 // Force reflow
-                content.offsetHeight;
+                void content.offsetHeight;
                 content.style.maxHeight = content.scrollHeight + 'px';
             } else {
                 content.style.maxHeight = content.scrollHeight + 'px';
                 // Force reflow
-                content.offsetHeight;
+                void content.offsetHeight;
                 content.style.maxHeight = '0';
                 setTimeout(() => {
                     content.classList.remove('expanded');
@@ -102,7 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Update button icon with smooth rotation
             const icon = expandBtn.querySelector('i');
-            icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+            const rotation = isExpanded ? '0deg' : '180deg';
+            icon.style.transform = `rotate(${rotation})`;
+            icon.style.webkitTransform = `rotate(${rotation})`;
+            icon.style.mozTransform = `rotate(${rotation})`;
+            icon.style.oTransform = `rotate(${rotation})`;
         };
         
         // Add click handlers
