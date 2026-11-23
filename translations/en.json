@@ -4,16 +4,18 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "experience": "Experience"
     },
     "welcome": {
         "title": "Ofelia Hănțoiu",
-        "subtitle": "IT Student ✦ Aspiring Developer ✦ Creative Mind",
-        "scroll": "Scroll Down"
+        "subtitle": "HBO-ICT Student ✦ Software Development ✦ Creative Mind",
+        "scroll": "Scroll Down",
+        "summary": "Software engineering internship experience at ASML, with projects in developer tooling, web applications, robotics and AI."
     },
     "about": {
         "title": "About Me",
-        "intro": "I'm Ofelia, a developer who sees code as a canvas for human connection. My passion for classical and modern art and literature, scientific discoveries, and strategic games has taught me that the most elegant solutions often lie at the intersection of different worlds. This rich tapestry of perspectives allows me to craft technology that resonates with both logic and humanity.",
+        "intro": "I'm an HBO-ICT student with hands-on software engineering experience in a high-tech environment. I enjoy turning technical challenges into reliable tools and applications, from Python developer tooling to web development and embedded systems. Creativity, curiosity and teamwork shape how I approach problems.",
         "highlights": {
             "leader": {
                 "title": "Natural Leader",
@@ -45,7 +47,7 @@
         "title": "Skills"
     },
     "projects": {
-        "title": "Projects",
+        "title": "Independent & Practice Projects",
         "university": {
             "title": "University Projects",
             "circle": {
@@ -74,11 +76,23 @@
             }
         },
         "buttons": {
-            "seeMore": "See More Projects",
-            "learnMore": "Learn More"
+            "seeMore": "See More Practice Projects",
+            "learnMore": "Learn More",
+            "viewUniversity": "Explore University Projects"
         }
     },
     "contact": {
         "title": "Let's Work Together..."
+    },
+    "experience": {
+        "title": "Professional Experience",
+        "period": "September 2025 – January 2026",
+        "role": "Software Engineering Intern · ASML",
+        "summary": "Developed an internal Python command-line tool for validating configuration files used in build and packaging workflows.",
+        "point1": "Implemented rule-based validation and static analysis to identify errors and inconsistencies.",
+        "point2": "Worked with structured data parsing and reporting in text, JSON and HTML.",
+        "point3": "Collaborated through code reviews and technical design discussions.",
+        "note": "This is a high-level overview; internal source code and configuration data are not shared.",
+        "cv": "View CV"
     }
-} 
+}

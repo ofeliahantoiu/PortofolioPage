@@ -4,16 +4,18 @@
         "about": "Over",
         "skills": "Vaardigheden",
         "projects": "Projecten",
-        "contact": "Contact"
+        "contact": "Contact",
+        "experience": "Ervaring"
     },
     "welcome": {
         "title": "Ofelia Hănțoiu",
-        "subtitle": "IT Student ✦ Aspirerend Ontwikkelaar ✦ Creatieve Geest",
-        "scroll": "Scroll naar beneden"
+        "subtitle": "HBO-ICT-student ✦ Softwareontwikkeling ✦ Creatief denken",
+        "scroll": "Scroll naar beneden",
+        "summary": "Ervaring met softwareontwikkeling tijdens een stage bij ASML, en projecten met ontwikkeltools, webapplicaties, robotica en AI."
     },
     "about": {
         "title": "Over Mij",
-        "intro": "Ik ben Ofelia, een ontwikkelaar die code ziet als een canvas voor menselijke verbinding. Mijn passie voor klassieke en moderne kunst en literatuur, wetenschappelijke ontdekkingen en strategische spellen heeft me geleerd dat de meest elegante oplossingen vaak liggen op het snijvlak van verschillende werelden. Dit rijke tapijt van perspectieven stelt me in staat technologie te creëren die resoneert met zowel logica als menselijkheid.",
+        "intro": "Ik ben een HBO-ICT-student met praktijkervaring in softwareontwikkeling binnen een hightechomgeving. Ik werk graag aan betrouwbare tools en applicaties: van ontwikkeltools in Python tot webontwikkeling en embedded systemen. Creativiteit, nieuwsgierigheid en samenwerking spelen daarbij een belangrijke rol.",
         "highlights": {
             "leader": {
                 "title": "Natuurlijk Leider",
@@ -45,7 +47,7 @@
         "title": "Vaardigheden"
     },
     "projects": {
-        "title": "Projecten",
+        "title": "Zelfstandige projecten en oefeningen",
         "university": {
             "title": "Universitaire Projecten",
             "circle": {
@@ -74,11 +76,23 @@
             }
         },
         "buttons": {
-            "seeMore": "Bekijk Meer Projecten",
-            "learnMore": "Meer Informatie"
+            "seeMore": "Meer oefenprojecten bekijken",
+            "learnMore": "Meer Informatie",
+            "viewUniversity": "Bekijk studieprojecten"
         }
     },
     "contact": {
         "title": "Laten We Samenwerken..."
+    },
+    "experience": {
+        "title": "Werkervaring",
+        "period": "September 2025 – januari 2026",
+        "role": "Stagiair Software Engineering · ASML",
+        "summary": "Een interne Python-commandlinetool ontwikkeld om configuratiebestanden voor build- en packagingprocessen te valideren.",
+        "point1": "Regelgebaseerde validatie en statische analyse geïmplementeerd om fouten en inconsistenties te herkennen.",
+        "point2": "Gewerkt met het verwerken van gestructureerde data en rapportages in tekst, JSON en HTML.",
+        "point3": "Samengewerkt via codereviews en technische ontwerpbesprekingen.",
+        "note": "Dit is een overzicht op hoofdlijnen; interne broncode en configuratiegegevens worden niet gedeeld.",
+        "cv": "Bekijk cv"
     }
-} 
+}

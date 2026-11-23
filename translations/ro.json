@@ -4,16 +4,18 @@
         "about": "Despre",
         "skills": "Aptitudini",
         "projects": "Proiecte",
-        "contact": "Contact"
+        "contact": "Contact",
+        "experience": "Experiență"
     },
     "welcome": {
         "title": "Ofelia Hănțoiu",
-        "subtitle": "Studentă IT ✦ Programator În Devenire ✦ Minte Creativă",
-        "scroll": "Derulează în jos"
+        "subtitle": "Studentă HBO-ICT ✦ Dezvoltare software ✦ Creativitate",
+        "scroll": "Derulează în jos",
+        "summary": "Experiență de internship în inginerie software la ASML și proiecte de instrumente pentru dezvoltatori, aplicații web, robotică și AI."
     },
     "about": {
         "title": "Despre Mine",
-        "intro": "Sunt Ofelia, un programator care vede codul ca pe un sprijin pentru conexiunea umană. Pasiunea mea pentru arta clasică și modernă, literatură, descoperiri științifice și jocuri strategice m-a învățat că cele mai elegante soluții se află adesea la intersecția diferitelor lumi. Această diversitate de perspective îmi oferă cadrul necesar pentru a crea tehnologie care atinge atât rigoarea logicii, cât și profunzimea umanității.",
+        "intro": "Sunt studentă HBO-ICT și am experiență practică în dezvoltare software într-un mediu high-tech. Îmi place să transform provocările tehnice în instrumente și aplicații fiabile, de la utilitare Python pentru dezvoltatori la aplicații web și sisteme embedded. Creativitatea, curiozitatea și colaborarea îmi ghidează abordarea.",
         "highlights": {
             "leader": {
                 "title": "Lider Natural",
@@ -45,7 +47,7 @@
         "title": "Aptitudini"
     },
     "projects": {
-        "title": "Proiecte",
+        "title": "Proiecte independente și exerciții",
         "university": {
             "title": "Proiecte Universitare",
             "circle": {
@@ -74,11 +76,23 @@
             }
         },
         "buttons": {
-            "seeMore": "Vezi Mai Multe Proiecte",
-            "learnMore": "Află Mai Multe"
+            "seeMore": "Vezi mai multe proiecte practice",
+            "learnMore": "Află Mai Multe",
+            "viewUniversity": "Explorează proiectele universitare"
         }
     },
     "contact": {
         "title": "Haide Să Lucrăm Împreună..."
+    },
+    "experience": {
+        "title": "Experiență profesională",
+        "period": "Septembrie 2025 – ianuarie 2026",
+        "role": "Intern Software Engineering · ASML",
+        "summary": "Am dezvoltat un instrument intern în linie de comandă, scris în Python, pentru validarea fișierelor de configurare folosite în procesele de build și packaging.",
+        "point1": "Am implementat validare pe bază de reguli și analiză statică pentru identificarea erorilor și inconsecvențelor.",
+        "point2": "Am lucrat cu parsarea datelor structurate și rapoarte în format text, JSON și HTML.",
+        "point3": "Am colaborat prin code review și discuții de proiectare tehnică.",
+        "note": "Aceasta este o prezentare generală; codul sursă intern și datele de configurare nu sunt publicate.",
+        "cv": "Vezi CV-ul"
     }
-} 
+}

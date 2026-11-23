@@ -1233,3 +1233,112 @@ section h2 {
     font-size: 0.9rem;
     color: var(--text);
 }
+
+/* Portfolio improvements: scoped to existing visual style; original theme colors remain unchanged. */
+html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+section, .university-project-card[id] { scroll-margin-top: 92px; }
+[hidden] { display: none !important; }
+.skip-link {
+    position: absolute; left: 12px; top: -60px; z-index: 2000;
+    background: var(--card-bg); color: var(--text); padding: 10px 16px;
+    border: 2px solid var(--accent); border-radius: 8px;
+}
+.skip-link:focus { top: 10px; }
+#navbar a:focus-visible, button:focus-visible, .button:focus-visible,
+.project-tile a:focus-visible, .contact-links a:focus-visible,
+.project-achievements summary:focus-visible { outline: 3px solid var(--accent-hover); outline-offset: 3px; }
+
+/* Small added hero line, keeping the original circles and typographic hierarchy. */
+#welcome-section .welcome-summary {
+    font-size: 1.03rem; line-height: 1.7; max-width: 650px;
+    margin: 0; opacity: .88;
+}
+
+/* Experience uses the same soft cards, typography and accent pills as the existing page. */
+#experience { background: var(--bg); }
+.experience-card {
+    max-width: 850px; margin: 0 auto; background: var(--card-bg);
+    padding: clamp(24px, 4vw, 42px); border-radius: 20px; text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,.09); border: 1px solid var(--border-color);
+}
+.experience-card-heading { display: flex; gap: 16px; align-items: center; margin-bottom: 18px; }
+.experience-card-heading h3 { color: var(--text); font-size: 1.45rem; line-height: 1.4; }
+.experience-period { color: var(--text); opacity: .72; font-size: .95rem; margin-bottom: 4px; }
+.experience-intro { line-height: 1.7; margin: 0 0 15px; }
+.experience-points { list-style: none; padding: 0; margin: 0 0 18px; }
+.experience-points li { position: relative; padding: 0 0 10px 19px; line-height: 1.6; }
+.experience-points li::before { content: '•'; color: var(--accent); position: absolute; left: 0; }
+.experience-card .project-tech-stack { justify-content: flex-start; margin-bottom: 15px; }
+.experience-note { opacity: .74; font-size: .91rem; line-height: 1.5; margin-bottom: 18px; }
+.experience-link, .university-archive-link {
+    background: var(--accent); color: #0D1821; padding: 11px 20px; border-radius: 8px;
+    display: inline-block; text-decoration: none; font-weight: 500; transition: transform .25s ease;
+}
+.experience-link:hover, .university-archive-link:hover { transform: translateY(-3px); }
+.university-archive-link { margin-top: 28px; }
+
+/* Repair homepage accordion transition and give the actual button a single rotation. */
+#university-projects .project-content {
+    transition: max-height .4s ease-out, opacity .3s ease, transform .3s ease;
+}
+#university-projects .expand-btn.active { transform: none; }
+#university-projects .expand-btn.active i { transform: rotate(180deg); }
+
+/* University detail page: preserve the original card aesthetic but keep case studies visible. */
+.university-details .university-projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+    gap: 24px; align-items: stretch;
+}
+.university-details .university-project-card {
+    text-align: left; cursor: default; border: 2px solid transparent; padding: 26px;
+}
+.university-details .university-project-card:target {
+    border-color: var(--accent);
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+.university-details .university-project-card .project-icon { margin-bottom: 16px; }
+.university-details .university-project-card .project-content {
+    max-height: none; opacity: 1; transform: none; overflow: visible;
+    transition: none; display: flex; flex-direction: column; flex: 1;
+}
+.university-details .project-content h3 { color: var(--text); font-size: 1.4rem; margin-bottom: 15px; }
+.university-details .case-study-kicker {
+    color: var(--accent-hover); font-size: .88rem; font-weight: 700; margin: 0 0 7px;
+}
+.university-details .case-study-section { margin-bottom: 12px; }
+.university-details .case-study-section h4 { color: var(--text); font-size: .95rem; margin-bottom: 6px; }
+.university-details .case-study-section p {
+    max-width: none; margin-bottom: 4px; color: var(--text); line-height: 1.6;
+}
+.university-details .project-tech-stack { justify-content: flex-start; margin: 10px 0 2px; }
+.university-details .project-achievements { margin-top: auto; }
+.university-details .project-achievements summary {
+    cursor: pointer; color: var(--text); font-weight: 500; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.university-details .project-achievements summary::-webkit-details-marker { display: none; }
+.university-details .project-achievements summary i { color: var(--accent); transition: transform .2s ease; }
+.university-details .project-achievements[open] summary i { transform: rotate(180deg); }
+.university-details .project-achievements ul { padding-top: 14px; }
+.university-details .project-achievements li { line-height: 1.55; }
+.project-evidence-note { max-width: 740px; margin: 34px auto 0; font-size: .94rem; line-height: 1.65; opacity: .79; }
+.university-details #projects .back-link { margin-top: 25px; }
+
+/* Project screenshots must show captions both on touch screens and with keyboard focus. */
+.project-tile:focus-within .project-overlay { transform: translateY(0); }
+.project-overlay p { background: transparent; color: white; padding: 0; margin: 0; }
+.practice-projects .project-overlay { transform: translateY(0); }
+.practice-projects #projects { padding: 80px 20px; }
+.practice-projects #projects .project-grid { margin-top: 20px; }
+
+@media (max-width: 768px) {
+    #welcome-section .welcome-summary { font-size: .95rem; padding: 0 8px; }
+    .experience-card { padding: 22px; }
+    .experience-card-heading h3 { font-size: 1.18rem; }
+    .university-details .university-projects-grid { grid-template-columns: 1fr; }
+    .university-details .university-project-card { padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
